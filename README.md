@@ -1,6 +1,7 @@
 # Youless Tile
 
-A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Meter
+A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Meter.
+This tile can be used on the Laravel Dashboard from www.spatie.be.
 
 ## Install
 
@@ -12,7 +13,7 @@ $ composer require xibel/laravel-dashboard-youless-tile
 
 ## Usage
 
-In the `app\config\dashboard.php` config file, you must add this configuration in the `tiles` key:
+In the `\config\dashboard.php` config file, you must add this configuration in the `tiles` key:
 
 ```php
 return [
@@ -29,8 +30,6 @@ return [
 In `app\Console\Kernel.php` you should schedule the `xibel\YoulessTile\Commands\FetchDataFromYoulessCommand` to run every `1` minute.
 
 ```php
-// in app/console/Kernel.php
-
 protected function schedule(Schedule $schedule)
 {
     // Youless tile
@@ -38,6 +37,8 @@ protected function schedule(Schedule $schedule)
 
 }
 ```
+
+To fetch data from your Youless at lease once, run 'php artisan schedule:run'. Use  a tool like supervisor to keep the scheduler running.
 
 In the `.env` file, you must add the 'YOULESS_URL' key and provide your Youless IP address or hostname:
 
@@ -49,7 +50,7 @@ In your dashboard view you use the `livewire:youless-summary-tile` component.
 
 ```blade
 <x-dashboard>
-    <livewire:youless-summary-tile position="a1" />
+    <livewire:youless-tile position="a1" />
 </x-dashboard>
 ```
 ## Change log
