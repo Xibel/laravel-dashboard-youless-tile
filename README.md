@@ -1,5 +1,8 @@
 # Youless Tile
 
+[![Latest Version on Packagist]][link-packagist]
+[![Total Downloads]][link-downloads]
+
 A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Meter
 
 ## Install
@@ -52,6 +55,9 @@ In your dashboard view you use the `livewire:youless-summary-tile` component.
     <livewire:youless-summary-tile position="a1" />
 </x-dashboard>
 ```
+## Change log
+
+Please see [CHANGELOG](CHANGELOG.md) for more version information.
 
 ## Credits
 
@@ -62,5 +68,7 @@ In your dashboard view you use the `livewire:youless-summary-tile` component.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
+[link-packagist]: https://packagist.org/packages/xibel/laravel-dashboard-youless-tile
+[link-downloads]: https://packagist.org/packages/xibel/laravel-dashboard-youless-tile
 [link-author]: https://github.com/xibel
 [link-contributors]: ../../contributors
