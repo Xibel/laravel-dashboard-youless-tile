@@ -1,0 +1,44 @@
+{
+    "name": "xibel/laravel-dashboard-youless-tile",
+    "description": "A tile for Laravel-Dashboard that displays statistics from a Youless LS120 energy reader",
+    "keywords": [
+        "xibel",
+        "php",
+        "laravel",
+        "laravel-dashboard",
+        "laravel-dashboard-tile",
+        "laravel-dashboard-youless-tile",
+        "youless",
+        "LS120"
+    ],
+    "type": "library",
+    "require": {
+        "php": "7.4",
+        "spatie/laravel-dashboard": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xibel\\YoulessTile\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xibel",
+            "email": "xibel@me.com",
+            "homepage": "http://www.xibel-it.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xibel\\YoulessTile\\YoulessTileServiceProvider"
+            ]
+        }
+    }
+}
