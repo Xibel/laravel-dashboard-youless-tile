@@ -7,7 +7,7 @@ A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energ
 Via Composer
 
 ```bash
-$ composer require xibel-it/laravel-dashboard-youless-tile
+$ composer require xibel/laravel-dashboard-youless-tile
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ return [
 ];
 ```
 
-In `app\Console\Kernel.php` you should schedule the `xibel-it\YoulessTile\Commands\FetchDataFromYoulessCommand` to run every `1` minute.
+In `app\Console\Kernel.php` you should schedule the `xibel\YoulessTile\Commands\FetchDataFromYoulessCommand` to run every `1` minute.
 
 ```php
 // in app/console/Kernel.php
@@ -34,7 +34,7 @@ In `app\Console\Kernel.php` you should schedule the `xibel-it\YoulessTile\Comman
 protected function schedule(Schedule $schedule)
 {
     // Youless tile
-        $schedule->command(\xibel-it\YoulessTile\Commands\FetchDataFromYoulessCommand::class)->everyMinute();
+        $schedule->command(\xibel\YoulessTile\Commands\FetchDataFromYoulessCommand::class)->everyMinute();
 
 }
 ```
@@ -62,5 +62,5 @@ In your dashboard view you use the `livewire:youless-summary-tile` component.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-author]: https://github.com/xibel-it
+[link-author]: https://github.com/xibel
 [link-contributors]: ../../contributors
