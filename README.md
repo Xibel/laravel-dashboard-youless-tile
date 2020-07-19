@@ -3,6 +3,8 @@
 A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Meter.
 This tile can be used on the Laravel Dashboard from www.spatie.be.
 
+For more information about this package see my website: https://www.xibel-it.eu/youless-tile-for-laravel-dashboard/
+
 ## Install
 
 Via Composer
