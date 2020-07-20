@@ -1,11 +1,13 @@
 # Youless Tile
 
-A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Meter.
-This tile can be used on the Laravel Dashboard from www.spatie.be.
+A tile for Laravel Dashboard that displays statistics from a Youless LS120 Energy Monitor.
+This tile can be used on the Laravel Dashboard from [Spatie][link-spatie].
+
+## Impression
 
 <img style="max-width:100%; height: auto" src="docs/images/youless_tile.png">
 
-For more information about this package see my website: https://www.xibel-it.eu/youless-tile-for-laravel-dashboard/
+For more information about this package see my website [Xibel-IT][link-xibel-it].
 
 ## Install
 
@@ -15,7 +17,7 @@ Via Composer
 $ composer require xibel/laravel-dashboard-youless-tile
 ```
 
-## Usage
+## Configuration
 
 In the `\config\dashboard.php` config file, you must add this configuration in the `tiles` key:
 
@@ -72,3 +74,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [link-author]: https://github.com/xibel
 [link-contributors]: ../../contributors
+[link-spatie]: https://docs.spatie.be/laravel-dashboard/v1/introduction
+[link-xibel-it]: https://www.xibel-it.eu/youless-tile-for-laravel-dashboard/
